@@ -11,7 +11,9 @@ class BookController {
 
   index = async (req, res, next) => {
     const books = await BookModel.findAll({
-
+	order: [
+        	['title', 'DESC']
+      	],
       include: [{
         model: PublisherModel,
         required: false,
