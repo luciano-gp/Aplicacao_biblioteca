@@ -22,7 +22,7 @@ class CategoriesController {
       where: where,
       limit: limit,
       offset: offset,
-      order: [[sort, order]],
+      order: [[sort, order]]
     });
     res.json(categories);
   }

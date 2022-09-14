@@ -8,8 +8,8 @@ class CategoriesController {
     const limit = params.limit || 100;
     const page = params.page || 1;
     const offset = (page - 1) * limit;
-    const sort = params.sort || 'id';
-    const order = params.order || 'ASC';
+    const sort = params.sort || 'description';
+    const order = params.order || 'DESC';
     const where = {};
 
     if (params.description) {
@@ -19,7 +19,6 @@ class CategoriesController {
     }
 
     const categories = await CategorieModel.findAll({
-      where: where,
       limit: limit,
       offset: offset,
       order: [[sort, order]],

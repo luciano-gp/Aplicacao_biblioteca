@@ -23,6 +23,9 @@ class CategoriesController {
       limit: limit,
       offset: offset,
       order: [[sort, order]],
+      order: [
+        ['description', 'DESC']
+      ]
     });
     res.json(categories);
   }

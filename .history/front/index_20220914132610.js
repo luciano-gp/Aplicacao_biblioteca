@@ -13,7 +13,7 @@ const validateUser = () => {
       if (response.status === 200) {
         const data = response.data;
         if (data > 0) {
-          window.open(`/front/html/menu.html`, '_self');
+          window.open(`/front/html/books.html`, '_self');
         } else {
           Swal.fire({
             icon: 'error',
