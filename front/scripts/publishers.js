@@ -200,7 +200,7 @@ const search = (req) => {
             trHTML += '<td>' + dat.name + '</td>';
             trHTML += '<td>' + dat.City.name + '</td>';
             trHTML += '<td>' + dat.City.State.name + '</td>';
-            trHTML += '<td><button type="button" class="btn btn-outline-warning" onclick="showUserEditBox(' + dat.id + ')">Edit</button>';
+            trHTML += '<td><button type="button" class="btn btn-outline-warning" style="margin-right: 5px;" onclick="showUserEditBox(' + dat.id + ')">Edit</button>';
             trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete(' + dat.id + ')">Del</button></td>';
             trHTML += "</tr>";
           }

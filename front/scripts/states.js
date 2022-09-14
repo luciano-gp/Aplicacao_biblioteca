@@ -121,7 +121,7 @@ const searchState = () => {
             trHTML += '<td>' + state.id + '</td>';
             trHTML += '<td>' + state.name + '</td>';
             trHTML += '<td>' + state.province + '</td>';
-            trHTML += '<td><button type="button" class="btn btn-outline-warning" onclick="showUserEditBox(' + state.id + ')">Edit</button>';
+            trHTML += '<td><button type="button" class="btn btn-outline-warning" style="margin-right: 5px;" onclick="showUserEditBox(' + state.id + ')">Edit</button>';
             trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete(' + state.id + ')">Del</button></td>';
             trHTML += "</tr>";
           }

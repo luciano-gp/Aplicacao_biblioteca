@@ -114,7 +114,7 @@ const search = (req) => {
             trHTML += '<tr class="table-active">';
             trHTML += '<td>' + dat.id + '</td>';
             trHTML += '<td>' + dat.description + '</td>';
-            trHTML += '<td><button type="button" class="btn btn-outline-warning" onclick="showUserEditBox(' + dat.id + ')">Edit</button>';
+            trHTML += '<td><button type="button" class="btn btn-outline-warning" style="margin-right: 5px;" onclick="showUserEditBox(' + dat.id + ')">Edit</button>';
             trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete(' + dat.id + ')">Del</button></td>';
             trHTML += "</tr>";
           }
