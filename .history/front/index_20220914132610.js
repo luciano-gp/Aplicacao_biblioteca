@@ -1,4 +1,4 @@
-const ENDPOINT = 'http://177.44.248.49:3030';
+const ENDPOINT = 'http://localhost:3000';
 
 const validateUser = () => {
     const email = document.getElementById("email").value
@@ -13,7 +13,7 @@ const validateUser = () => {
       if (response.status === 200) {
         const data = response.data;
         if (data > 0) {
-          window.open(`/front/html/menu.html`, '_self');
+          window.open(`/front/html/books.html`, '_self');
         } else {
           Swal.fire({
             icon: 'error',

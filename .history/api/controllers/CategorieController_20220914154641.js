@@ -19,10 +19,13 @@ class CategoriesController {
     }
 
     const categories = await CategorieModel.findAll({
+      order: [
+        ['title', 'DESC']
+      ],
       where: where,
       limit: limit,
       offset: offset,
-      order: [[sort, order]],
+      order: [[sort, order]]
     });
     res.json(categories);
   }
